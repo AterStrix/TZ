@@ -1,0 +1,24 @@
+.ng-touched.ng-invalid {
+  border-color: #fa0000;
+}
+.ng-valid {
+  border-color: #7efa16;
+}
+.errorMessage {
+  color: #fa0000;
+}
+input, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.loginForm {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -150px 0 0 -150px;
+}

@@ -1,0 +1,17 @@
+<div class="loginForm">
+  <form
+    [formGroup]="loginForm"
+  >
+    <h2 class="errorMessage" *ngIf="errorMessage">{{errorMessage}}</h2>
+    <input type="text" placeholder="login" formControlName="username" />
+    <input type="password" placeholder="password" formControlName="password_md5" />
+    <re-captcha
+      #captchaRef="reCaptcha"
+      siteKey="6LcKNEIUAAAAAPGe3VDGzUcqXyi5iyMD-IPhiXej"
+      size="invisible"
+      (resolved)="$event && submitForm($event)"
+    ></re-captcha>
+    <button type="button" (click)="captchaRef.execute()">Login</button>
+  </form>
+  <p>{{this.userStatus}}</p>
+</div>
