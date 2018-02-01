@@ -17,7 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
+    ServiceWorkerModule.register('TZ/ngsw-worker.js', {enabled: environment.production}),
     RecaptchaModule.forRoot()
   ],
   providers: [],
